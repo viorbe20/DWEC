@@ -1,0 +1,111 @@
+// question: 1 name: ¿Cómo se declara un array?
+::¿Cómo se declara un array?::¿Cómo se declara un array?{
+~let nuevoArray = new Array();
+=Todas son correctas;
+~let nuevoArray[];
+~let nuevoArray[4]; 
+}
+
+// question: 2 name: ¿Cómo averiguarías la cantidad de elementos que hay en un array?
+::¿Cómo averiguarías la cantidad de elementos que hay en un array?::¿Cómo averiguarías la cantidad de elementos que hay en un array?{
+	~array.size();#este método no existe en JavaScript, sino en Java.
+	~array.count();#este método no existe en JavaScript, sino en Java.
+	~array.join();#este método devuelve el array convertido en una cadena con el separador que le indiquemos.
+	=array.length;#esta es la opción correcta, se trata de una propiedad, no un método de los arrays en JavaScript.
+}
+
+// question: 3 name: ¿Cuál es la diferencia entre el método array.shift() y array.pop()?
+::¿Cuál es la diferencia entre el método array.shift() y array.pop()?::¿Cuál es la diferencia entre el método array.shift() y array.pop()?{
+	=array.shift() elimina el elemento de la posición 0, y array.pop() elimina el último elemento del array;
+	~array.shift() elimina el último elemento del array y array.pop() elimina el elemento con índice 0;
+	~array.shift() incluye un elemento en la posición cero del array y array.pop() lo incluye al final del array;
+	~array.shift() elimina el elemento de la posición 0 y array.pop() incluye un elemento al final del array;
+}
+
+// question: 4  name: ¿Qué hace el método array.every()?
+::¿Qué hace el método array.every()?::¿Qué hace el método array.every()?{
+	=Determina si todos los elementos en el array cumplen una condición;#Este sería el método array.every();
+	~Devuelve todos los elementos de un array;
+	~Devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.;#Este sería el método array.find();
+	~Convierte los elementos de un array en una cadena, opcionalmente se puede incluir separador;#Este sería el método array.join();
+}
+
+// question: 5  name: ¿Qué hace el método array.join()?
+::¿Qué hace el método array.join()?::¿Qué hace el método array.join()?{
+	~Determina si todos los elementos en el array cumplen una condición;#Este sería el método array.every();
+	~Determina si alguno de los elementos cumple una condición;#Este sería el método array.some();
+	~Devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.;#Este sería el método array.find();
+	=Convierte los elementos de un array en una cadena, opcionalmente se puede incluir separador;#Este sería el método array.join();
+}
+
+// question 6 name: ¿Qué diferencia hay entre Array.of(2) y Array(2)?
+::¿Qué diferencia hay entre Array.of(2) y Array(2)?::¿Qué diferencia hay entre Array.of(2) y Array(2)?{
+	~Ninguna, los dos daclaran un array un array con dos posiciones;
+	~Array.of(2) crea un array con dos posiciones y Array(2) crea un array con el valor 2;
+	=Array(2) crea un array con dos posiciones y Array.of(2) crea un array con el valor 2;
+	~Ninguna, los dos declaran un array que contiene el valor 2;
+}
+
+// question: 7 name: Usando el metodo Array.isArray ¿Cuál de estos valores devolvería true? (Elige varias respuestas)
+:: Usando el metodo Array.isArray ¿Cuál de estos valores devolvería true?(Elige varias respuestas):: Usando el metodo Array.isArray ¿Cuál de estos valores devolvería true?(Elige varias respuestas){
+	~%25%[1, 2, 3]
+	~%25%[]
+	~%25%new Array()
+	~%25%Array.prototype
+}
+
+// question: 8 name: Array.from() se usa para...
+::Array.from() se usa para...::Array.from() se usa para...{
+	~Crea un nuevo array a partir de varios;
+	=Crear un nuevo array a partir de un objeto iterable;
+	~Crear un nuevo array a partir de un número de elememto;
+	~Crea un nuevo array con elementos aleatorios;
+}
+
+// question 9 name: ¿Qué tipo de for se puede usar para recorrer un array?
+::¿¿QuéQue tipo de for se puede usar para recorrer un array?::¿Qué tipo de for se puede usar para recorrer un array?{
+	~for...in;
+	~for...of;
+	~foreach
+	=Todos;
+}
+
+// question 10 name: Señala cuáles de estos métodos están relacionados con la cola.
+::Señala cuáles de estos métodos están relacionados con la cola::Señala cuáles de estos métodos están relacionados con la cola{
+	~%50%array.shift()
+	~array.pop()
+	~%50%array.unshift()
+	~array.push()
+}
+
+// question 11 name: Señala cuáles son colecciones indexadas
+::Señala cuáles son colecciones indexadas::Señala cuáles son colecciones indexadas{
+	~Map
+	~%50%Array
+	~%50%TypedArray
+	~Set
+}
+
+// question 12 name: ¿Cuál de las siguientes colecciones trabaja con datos binarios?
+::¿Cuál de las siguientes colecciones trabaja con datos binarios?::¿Cuál de las siguientes colecciones trabaja con datos binarios?{
+	~Map
+	~Array
+	=TypedArray
+	~Set
+}
+
+// question 12 name: array.find() elimina el primer elemento del array y lo devuelve, haciendo que los demás elementos avancen una posición
+::array.find() elimina el primer elemento del array y lo devuelve, haciendo que los demás elementos avancen una posición::array.find() elimina el primer elemento del array y lo devuelve, haciendo que los demás elementos avancen una posición
+array.find() elimina el primer elemento del array y lo devuelve, haciendo que los demás elementos avancen una posición{V}
+
+// question 13 name: Cuando creas un array los elementos no inicializados se muestran como undefined
+::Cuando creas un array los elementos no inicializados se muestran como undefined::Cuando creas un array los elementos no inicializados se muestran como undefined
+Cuando creas un array los elementos no inicializados se muestran como undefined{T}
+
+// question 14 name: El método array.indexOf() devuelve un elemento en función del índice introducido
+::El método array.indexOf() devuelve un elemento en función del índice introducido::El método array.indexOf() devuelve un elemento en función del índice introducido
+El método array.indexOf() devuelve un elemento en función del índice introducido{F}
+
+// question 15 name: El método array.reverse() invierte el orden de los índices de un array.
+::El método array.reverse() invierte el orden de los índices de un array.::El método array.reverse() invierte el orden de los índices de un array.
+El método array.reverse() invierte el orden de los índices de un array.{F}
